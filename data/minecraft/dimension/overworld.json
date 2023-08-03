@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:overworld",
+    "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+            "biome": "minecraft:plains",
+            "layers": [
+                {
+                    "block": "minecraft:bedrock",
+                    "height": 1
+                },
+                {
+                    "block": "minecraft:dirt",
+                    "height": 6
+                },
+                {
+                    "block": "minecraft:air",
+                    "height": 175
+                },
+                {
+                    "block": "minecraft:cobblestone",
+                    "height": 9
+                }
+            ],
+            "structure_overrides": ["endless_city:sapling_structure","endless_city:glowstone"]
+        }
+    }
+}

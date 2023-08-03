@@ -1,0 +1,14 @@
+{
+    "structures": [
+        {
+            "structure": "endless_city:sapling_structure",
+            "weight": 1
+        }
+    ],
+    "placement": {
+        "type": "minecraft:random_spread",
+        "salt": 620157506,
+        "spacing": 6,
+        "separation": 3
+    }
+}

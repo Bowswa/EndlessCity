@@ -4,22 +4,22 @@ scoreboard players set in math 1
 scoreboard players set in1 math 5
 
 scoreboard players set should_randomise endless_city.data 0
-execute if block ~ ~-1 ~-17 minecraft:gray_concrete run scoreboard players operation sides endless_city.data += #north endless_city.data
+execute if block ~ ~-1 ~-17 #endless_city:road_blocks run scoreboard players operation sides endless_city.data += #north endless_city.data
 execute if block ~ ~-1 ~-17 minecraft:air store success score should_randomise endless_city.data run function endless_city:rng/range
 execute if score should_randomise endless_city.data matches 1 if score out math matches 4.. run scoreboard players operation sides endless_city.data += #north endless_city.data
 
 scoreboard players set should_randomise endless_city.data 0
-execute if block ~ ~-1 ~17 minecraft:gray_concrete run scoreboard players operation sides endless_city.data += #south endless_city.data
+execute if block ~ ~-1 ~17 #endless_city:road_blocks run scoreboard players operation sides endless_city.data += #south endless_city.data
 execute if block ~ ~-1 ~17 minecraft:air store success score should_randomise endless_city.data run function endless_city:rng/range
 execute if score should_randomise endless_city.data matches 1 if score out math matches 4.. run scoreboard players operation sides endless_city.data += #south endless_city.data
 
 scoreboard players set should_randomise endless_city.data 0
-execute if block ~17 ~-1 ~ minecraft:gray_concrete run scoreboard players operation sides endless_city.data += #east endless_city.data
+execute if block ~17 ~-1 ~ #endless_city:road_blocks run scoreboard players operation sides endless_city.data += #east endless_city.data
 execute if block ~17 ~-1 ~ minecraft:air store success score should_randomise endless_city.data run function endless_city:rng/range
 execute if score should_randomise endless_city.data matches 1 if score out math matches 4.. run scoreboard players operation sides endless_city.data += #east endless_city.data
 
 scoreboard players set should_randomise endless_city.data 0
-execute if block ~-17 ~-1 ~ minecraft:gray_concrete run scoreboard players operation sides endless_city.data += #west endless_city.data
+execute if block ~-17 ~-1 ~ #endless_city:road_blocks run scoreboard players operation sides endless_city.data += #west endless_city.data
 execute if block ~-17 ~-1 ~ minecraft:air store success score should_randomise endless_city.data run function endless_city:rng/range
 execute if score should_randomise endless_city.data matches 1 if score out math matches 4.. run scoreboard players operation sides endless_city.data += #west endless_city.data
 

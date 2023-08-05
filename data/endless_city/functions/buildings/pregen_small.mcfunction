@@ -1,5 +1,4 @@
-execute if block ~ ~-1 ~ cobblestone_slab run return 0
-execute if block ~ ~-1 ~ coal_block run return 0
+execute if block ~ ~-1 ~ #endless_city:invalid_blocks run return 0
 
 # setting the max offset for the buildings to 3 blocks in either direction
 scoreboard players set in math -3

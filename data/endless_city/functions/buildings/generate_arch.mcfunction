@@ -1,7 +1,6 @@
 execute store result score $entity_rot endless_city.data run data get entity @s Rotation[0]
 kill @s
-execute if block ~ ~-1 ~ cobblestone_slab run return 0
-execute if block ~ ~-1 ~ coal_block run return 0
+execute if block ~ ~-1 ~ #endless_city:invalid_blocks run return 0
 
 # chance to not generate
 scoreboard players set in math 1

@@ -1,0 +1,2 @@
+execute store success score replace endless_city.data unless entity @e[type=minecraft:marker,distance=0.1..11] run fill ~-12 ~-3 ~-12 ~12 ~3 ~12 minecraft:cobblestone replace minecraft:cobblestone_slab
+execute if score replace endless_city.data matches 1 run kill @s

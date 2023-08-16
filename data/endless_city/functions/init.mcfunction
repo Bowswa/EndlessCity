@@ -17,3 +17,6 @@ setworldspawn 0 65 0
 gamerule spawnRadius 0
 
 scoreboard players set setup endless_city.data 1
+
+scoreboard players set #2 rd 2
+scoreboard players set #32 rd 32

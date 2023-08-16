@@ -11,8 +11,8 @@ execute unless score out math matches 1 run return 0
 #check for valid space
 execute unless blocks ^-2 ^1 ^ ^2 ^1 ^ ~ 300 ~ masked run return 0
 
-execute if score $entity_rot endless_city.data matches 0 run place template endless_city:buildings/redstone_arch ^2 ^ ^ 180
-execute if score $entity_rot endless_city.data matches 90 run place template endless_city:buildings/redstone_arch ^2 ^ ^ counterclockwise_90
-execute if score $entity_rot endless_city.data matches -180 run place template endless_city:buildings/redstone_arch ^2 ^ ^ none
-execute if score $entity_rot endless_city.data matches 180 run place template endless_city:buildings/redstone_arch ^2 ^ ^ none
-execute if score $entity_rot endless_city.data matches -90 run place template endless_city:buildings/redstone_arch ^2 ^ ^ clockwise_90
+execute if score $entity_rot endless_city.data matches 0 run place template endless_city:buildings/redstone_arch ^2 ^-1 ^ 180
+execute if score $entity_rot endless_city.data matches 90 run place template endless_city:buildings/redstone_arch ^2 ^-1 ^ counterclockwise_90
+execute if score $entity_rot endless_city.data matches -180 run place template endless_city:buildings/redstone_arch ^2 ^-1 ^ none
+execute if score $entity_rot endless_city.data matches 180 run place template endless_city:buildings/redstone_arch ^2 ^-1 ^ none
+execute if score $entity_rot endless_city.data matches -90 run place template endless_city:buildings/redstone_arch ^2 ^-1 ^ clockwise_90
